@@ -253,6 +253,7 @@ jobs:
           asset_name: clairctl-${{matrix.goos}}-${{matrix.goarch}}
           asset_content_type: application/octet-stream
 
+
   deploy-documentation:
     name: Deploy Documentation
     runs-on: ubuntu-latest
