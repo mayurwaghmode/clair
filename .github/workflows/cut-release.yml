@@ -109,10 +109,12 @@ jobs:
             goarch: '386'
           - goos: darwin
             goarch: arm64
-          - goos: darwin
-            goarch: 'ppc64le'
           - goos: windows
             goarch: '386'
+          - goos: windows
+            goarch: 'ppc64le'
+          - goos: darwin
+            goarch: 'ppc64le'
     env:
       GOOS: ${{matrix.goos}}
       GOARCH: ${{matrix.goarch}}
